@@ -1,0 +1,22 @@
+/* -------------------------------------------------------------------------- */
+/*                                   Imports                                  */
+/* -------------------------------------------------------------------------- */
+
+@import url("./tailwind.css");
+
+/* Components */
+
+@import url("./components/button.css");
+@import url("./components/form.css");
+@import url("./components/input.css");
+@import url("./components/link.css");
+
+/* Page-specific styles */
+
+@import url("./pages/index.css");
+
+/* -------------------------------------------------------------------------- */
+
+:root {
+	font-family: Inter;
+}

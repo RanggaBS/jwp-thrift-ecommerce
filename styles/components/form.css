@@ -1,0 +1,7 @@
+.input-field {
+	@apply mb-4;
+}
+
+.input-field > label {
+	@apply inline-block mb-1 text-sm w-max;
+}

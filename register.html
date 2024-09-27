@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Thrift | Register</title>
+		<link rel="stylesheet" href="./styles/_tw-build.css" />
+	</head>
+	<body>
+		<div
+			id="root"
+			class="grid text-black bg-zinc-50 min-h-dvh place-items-center"
+		>
+			<a href="/" class="absolute link top-4 left-4">&larr; Checklist</a>
+
+			<div class="w-full max-w-sm px-6">
+				<div class="mb-12 text-center">
+					<h1 class="pb-2 text-4xl font-bold">Buat Akun</h1>
+
+					<p class="text-sm text-zinc-400">Isi formulir di bawah ini.</p>
+				</div>
+
+				<form action="" method="post" id="form" class="mb-8">
+					<div class="input-field">
+						<label for="nama" class="font-medium">Nama</label>
+						<input
+							type="text"
+							name="nama"
+							id="nama"
+							placeholder="John Doe..."
+							class="input"
+						/>
+					</div>
+					<div class="input-field">
+						<label for="email" class="font-medium">Email</label>
+						<input
+							type="text"
+							name="email"
+							id="email"
+							placeholder="johndoe@mail.com..."
+							class="input"
+						/>
+					</div>
+					<div class="input-field">
+						<label for="password" class="font-medium">Password</label>
+						<input
+							type="text"
+							name="password"
+							id="password"
+							placeholder="rahasia..."
+							class="input"
+						/>
+					</div>
+
+					<button type="submit" class="w-full btn btn-md btn-primary">
+						Daftar
+					</button>
+				</form>
+
+				<p class="text-xs text-center">
+					Sudah punya akun? <a href="./login.html" class="link">Masuk</a>
+				</p>
+			</div>
+		</div>
+
+		<script>
+			document
+				.getElementById("form")
+				.addEventListener("submit", function (event) {
+					event.preventDefault();
+				});
+		</script>
+	</body>
+</html>

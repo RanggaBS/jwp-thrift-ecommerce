@@ -1,0 +1,3 @@
+.input {
+	@apply w-full px-4 py-3 text-sm border rounded-md border-zinc-400;
+}

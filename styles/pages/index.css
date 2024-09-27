@@ -1,0 +1,15 @@
+.listitem {
+	@apply flex items-center justify-between w-60;
+}
+
+.listitem > svg {
+	@apply w-6 h-6;
+}
+
+.listitem-incomplete > svg {
+	@apply text-red-500;
+}
+
+.listitem-complete > svg {
+	@apply text-lime-500;
+}
