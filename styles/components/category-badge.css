@@ -1,0 +1,3 @@
+.category-badge {
+	@apply inline-block px-4 py-2 text-sm transition-colors border rounded-full border-primary hover:bg-primary hover:text-white active:scale-95;
+}

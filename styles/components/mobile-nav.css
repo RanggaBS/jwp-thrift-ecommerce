@@ -1,0 +1,11 @@
+.mobile-nav-icon {
+	@apply flex flex-col items-center px-2 py-1 transition-colors 2xs:px-3 2xs:py-2 hover:bg-zinc-200;
+}
+
+.mobile-nav-icon > svg {
+	@apply w-4 h-4 2xs:h-6 2xs:w-6 xs:w-8 xs:h-8;
+}
+
+.mobile-nav-icon > span {
+	@apply hidden text-xs;
+}

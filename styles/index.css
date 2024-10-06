@@ -3,19 +3,28 @@
 /* -------------------------------------------------------------------------- */
 
 @import url("./tailwind.css");
+@import url("./font.css");
 
 /* Components */
 
+@import url("./components/brand.css");
 @import url("./components/button.css");
+@import url("./components/category-badge.css");
 @import url("./components/form.css");
 @import url("./components/input.css");
 @import url("./components/link.css");
+
+@import url("./components/mobile-nav.css");
+
+@import url("./components/section-wrapper.css");
 
 /* Page-specific styles */
 
 @import url("./pages/index.css");
 
 /* -------------------------------------------------------------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
 	font-family: Inter;

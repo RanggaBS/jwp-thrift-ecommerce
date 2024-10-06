@@ -3,5 +3,5 @@
 }
 
 .input-field > label {
-	@apply inline-block mb-1 text-sm w-max;
+	@apply inline-block mb-1 text-sm font-medium w-max;
 }

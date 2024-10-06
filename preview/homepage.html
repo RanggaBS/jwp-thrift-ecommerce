@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Thrift | Homepage</title>
+		<link rel="stylesheet" href="./styles/tw-output.css" />
+
+		<!-- Swiper -->
+		<link rel="stylesheet" href="./lib/swiper/swiper-bundle.min.css" />
+	</head>
+	<body>
+		<div id="root" class="text-black bg-zinc-50 min-h-dvh">
+			<!-- -------------------------------------------------------------------- -->
+			<!-- Top Navbar                                                           -->
+			<!-- -------------------------------------------------------------------- -->
+
+			<nav class="sticky top-0 z-[2] mb-4 border-b border-zinc-300 bg-zinc-50">
+				<div class="flex items-center justify-between py-3 section-wrapper">
+					<a
+						href="https://ranggabs.github.io/jwp-thrift-ecommerce/"
+						class="brand"
+					>
+						thrift
+					</a>
+
+					<form action="" method="get" class="relative">
+						<svg
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="currentColor"
+							xmlns="http://www.w3.org/2000/svg"
+							class="absolute text-transparent -translate-y-1/2 pointer-events-none top-1/2 left-4"
+						>
+							<path
+								d="M20 20L15.8033 15.8033M18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18C14.6421 18 18 14.6421 18 10.5Z"
+								stroke="#000000"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+						</svg>
+
+						<input
+							type="text"
+							name="search"
+							id="search"
+							placeholder="Search..."
+							class="py-2 pl-12 pr-4 text-sm border rounded-full max-w-36 sm:max-w-48 md:max-w-56 border-zinc-300"
+						/>
+					</form>
+				</div>
+			</nav>
+
+			<main>
+				<!-- ------------------------------------------------------------------- -->
+				<!-- Hero                                                                -->
+				<!-- ------------------------------------------------------------------- -->
+
+				<section id="hero">
+					<div class="section-wrapper">
+						<!-- <swiper-container
+							autoplay="true"
+							delay="1500"
+							loop="true"
+							pagination="true"
+							space-between="16px"
+						>
+							<swiper-slide>
+								<a href="#" class="max-h-[215px] block rounded-md relative">
+									<img
+										src="assets/images/hero-1.png"
+										alt="A man worn black t-shirt"
+										class="block object-cover w-full max-h-[215px] rounded-md"
+									/>
+									<p
+										class="absolute text-xl font-bold text-white bottom-4 left-4"
+									>
+										Essential Cotton<br />Black T-Shirt
+									</p>
+								</a>
+							</swiper-slide>
+							<swiper-slide>
+								<a href="#" class="max-h-[215px] block rounded-md relative">
+									<img
+										src="assets/images/hero-1.png"
+										alt="A man worn black t-shirt"
+										class="block object-cover w-full max-h-[215px] rounded-md"
+									/>
+									<p
+										class="absolute text-xl font-bold text-white bottom-4 left-4"
+									>
+										Essential Cotton<br />Black T-Shirt
+									</p>
+								</a>
+							</swiper-slide>
+							<swiper-slide>
+								<a href="#" class="max-h-[215px] block rounded-md relative">
+									<img
+										src="assets/images/hero-1.png"
+										alt="A man worn black t-shirt"
+										class="block object-cover w-full max-h-[215px] rounded-md"
+									/>
+									<p
+										class="absolute text-xl font-bold text-white bottom-4 left-4"
+									>
+										Essential Cotton<br />Black T-Shirt
+									</p>
+								</a>
+							</swiper-slide>
+						</swiper-container> -->
+
+						<div id="swiper-hero" class="rounded-lg swiper">
+							<ul class="swiper-wrapper">
+								<li class="swiper-slide">
+									<a href="#" class="max-h-[215px] block rounded-lg relative">
+										<img
+											src="assets/images/hero-1.png"
+											alt="A man worn black t-shirt"
+											class="block object-cover w-full max-h-[215px] rounded-lg"
+										/>
+										<p
+											class="absolute text-xl font-bold text-white bottom-4 left-4"
+										>
+											Essential Cotton<br />Black T-Shirt
+										</p>
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="#" class="max-h-[215px] block rounded-lg relative">
+										<img
+											src="assets/images/hero-1.png"
+											alt="A man worn black t-shirt"
+											class="block object-cover w-full max-h-[215px] rounded-lg"
+										/>
+										<p
+											class="absolute text-xl font-bold text-white bottom-4 left-4"
+										>
+											Essential Cotton<br />Black T-Shirt 2
+										</p>
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="#" class="max-h-[215px] block rounded-lg relative">
+										<img
+											src="assets/images/hero-1.png"
+											alt="A man worn black t-shirt"
+											class="block object-cover w-full max-h-[215px] rounded-lg"
+										/>
+										<p
+											class="absolute text-xl font-bold text-white bottom-4 left-4"
+										>
+											Essential Cotton<br />Black T-Shirt 3
+										</p>
+									</a>
+								</li>
+							</ul>
+
+							<div id="swiper-hero-pagination" class="swiper-pagination"></div>
+						</div>
+					</div>
+				</section>
+
+				<section id="category">
+					<div class="mt-6 section-wrapper">
+						<h2 class="pb-4 text-2xl font-bold">Kategori</h2>
+
+						<swiper-container
+							slides-per-view="auto"
+							space-between="16"
+							navigation="true"
+						>
+							<swiper-slide class="w-max">
+								<a href="#" class="flex flex-col items-center justify-center">
+									<div class="p-2 border rounded-full border-primary">
+										<svg
+											fill="currentColor"
+											height="24"
+											width="24"
+											version="1.1"
+											id="Layer_1"
+											xmlns="http://www.w3.org/2000/svg"
+											xmlns:xlink="http://www.w3.org/1999/xlink"
+											viewBox="0 0 472.615 472.615"
+											xml:space="preserve"
+										>
+											<g>
+												<g>
+													<path
+														d="M357.916,38.637h-60.825c0.005,33.572-27.212,60.788-60.784,60.788c-33.573,0-60.789-27.216-60.748-60.788h-60.861L0,153.336l63.137,63.137l51.551-51.545v269.049h243.24V164.929l51.549,51.545l63.138-63.137L357.916,38.637z"
+													/>
+												</g>
+											</g>
+										</svg>
+									</div>
+
+									<span class="text-xs">Kaus</span>
+								</a>
+							</swiper-slide>
+							<swiper-slide class="w-max">
+								<a href="#" class="flex flex-col items-center justify-center">
+									<div class="p-2 border rounded-full border-primary">
+										<svg
+											height="24"
+											width="24"
+											version="1.1"
+											id="_x32_"
+											xmlns="http://www.w3.org/2000/svg"
+											xmlns:xlink="http://www.w3.org/1999/xlink"
+											viewBox="0 0 512 512"
+											xml:space="preserve"
+										>
+											<style type="text/css">
+												.st0 {
+													fill: #000000;
+												}
+											</style>
+											<g>
+												<path
+													class="st0"
+													d="M444.28,140.387c-44.043-85.334-126.065-66.065-126.065-93.592s0-28.064,0-28.064
+												C318.215,8.387,309.828,0,299.484,0h-86.969c-10.343,0-18.73,8.387-18.73,18.732c0,0,0,0.537,0,28.064
+												s-82.022,8.258-126.065,93.592c-40.655,78.774,0,173.419-60.559,311.054l79.828,22.022c22.732-57.247,35.785-134.882,41.29-209.204
+												c0,0,1.624,148.172,0,247.742h255.442c-1.624-99.57,0-247.742,0-247.742c5.506,74.323,18.559,151.957,41.29,209.204l79.828-22.022
+												C444.28,313.806,484.936,219.161,444.28,140.387z"
+												/>
+											</g>
+										</svg>
+									</div>
+
+									<span class="w-12 text-xs text-center text-wrap">
+										Sweter
+									</span>
+								</a>
+							</swiper-slide>
+							<swiper-slide class="w-max">
+								<a href="#" class="flex flex-col items-center justify-center">
+									<div class="p-2 border rounded-full border-primary">
+										<svg
+											fill="currentColor"
+											height="24"
+											width="24"
+											version="1.1"
+											id="Layer_1"
+											xmlns="http://www.w3.org/2000/svg"
+											xmlns:xlink="http://www.w3.org/1999/xlink"
+											viewBox="0 0 512 512"
+											xml:space="preserve"
+										>
+											<g>
+												<g>
+													<g>
+														<path
+															d="M140.082,66.659l-8.576-7.151C100.795,73.503,93.943,85.313,93.823,92.89L9.13,399.664l75.469,21.564l34.893-133.137
+				V469.33c0,23.526,19.14,42.667,42.667,42.667h0.461l9.643-13.491c25.984-42.726,41.08-115.755,41.08-199.842
+				C213.341,180.997,176.485,92.882,140.082,66.659z"
+														/>
+														<path
+															d="M0.857,429.627c-3.499,13.363,4.454,27.315,17.732,31.112l26.624,7.603c6.75,1.929,13.815,1.041,19.891-2.483
+				c6.076-3.533,10.342-9.242,11.972-15.923l3.2-12.186L4.586,416.127L0.857,429.627z"
+														/>
+														<path
+															d="M281.605,298.667c0-110.677,33.033-211.78,80.341-245.862l0.734-0.614c-7.475-2.782-15.821-5.632-25.353-8.542
+				l-4.523-4.523v3.541c0,18.825-15.317,34.133-34.133,34.133c-4.71,0-8.533-3.823-8.533-8.533c0-4.719,3.823-8.533,8.533-8.533
+				c9.412,0,17.067-7.663,17.067-17.067V22.067l-1.519-1.519l-2.074-4.156C307.086,6.281,296.922,0,285.616,0h-59.204
+				c-11.324,0-21.487,6.289-26.547,16.418l-2.048,4.13l-1.545,1.536v20.582c0,9.404,7.654,17.067,17.067,17.067
+				c4.71,0,8.533,3.814,8.533,8.533c0,4.71-3.823,8.533-8.533,8.533c-18.825,0-34.133-15.309-34.133-34.133v-3.516l-4.497,4.497
+				c-9.54,2.91-17.877,5.751-25.353,8.542l1.178,0.981c46.831,33.715,79.872,134.818,79.872,245.495
+				c0,87.125-16.009,163.388-43.913,209.229L183.566,512H328.41l-2.551-3.575C297.605,462.054,281.605,385.792,281.605,298.667z"
+														/>
+														<path
+															d="M418.205,92.967c-0.068-7.569-6.861-19.413-37.675-33.451l-8.132,6.776c-36.881,26.59-73.728,114.705-73.728,232.371
+				c0,84.087,15.095,157.116,41.421,200.363l9.267,12.971h0.512c23.526,0,42.667-19.14,42.667-42.667V290.138l35.396,133.385
+				l75.58-21.598L418.205,92.967z M324.27,349.863c-4.71,0-8.533-3.823-8.533-8.533s3.823-8.533,8.533-8.533
+				s8.533,3.823,8.533,8.533S328.98,349.863,324.27,349.863z M324.27,273.063c-4.71,0-8.533-3.823-8.533-8.533
+				s3.823-8.533,8.533-8.533s8.533,3.823,8.533,8.533S328.98,273.063,324.27,273.063z"
+														/>
+														<path
+															d="M511.13,429.519l-3.072-11.136l-75.742,21.641l2.594,9.779c1.664,6.835,5.931,12.535,12.015,16.068
+				c6.076,3.524,13.141,4.403,19.891,2.475l26.607-7.603C506.709,456.954,514.662,442.993,511.13,429.519z"
+														/>
+													</g>
+												</g>
+											</g>
+										</svg>
+									</div>
+
+									<span class="text-xs">Kemeja</span>
+								</a>
+							</swiper-slide>
+							<swiper-slide class="w-max">
+								<a href="#" class="flex flex-col items-center justify-center">
+									<div class="p-2 border rounded-full border-primary">
+										<svg
+											version="1.1"
+											id="_x32_"
+											xmlns="http://www.w3.org/2000/svg"
+											xmlns:xlink="http://www.w3.org/1999/xlink"
+											viewBox="0 0 512 512"
+											xml:space="preserve"
+											height="24"
+											width="24"
+										>
+											<style type="text/css">
+												.st0 {
+													fill: #000000;
+												}
+											</style>
+											<g>
+												<path
+													class="st0"
+													d="M406.997,51.615H105.002c-2.568,0-4.648,2.08-4.648,4.648V507.36c0,2.56,2.08,4.64,4.648,4.64h117.086
+		c2.416,0,4.424-1.84,4.632-4.248l24.655-287.267c0.201-2.4,2.216-4.248,4.624-4.248c2.408,0,4.424,1.848,4.623,4.248
+		l24.656,287.267c0.208,2.408,2.216,4.248,4.632,4.248h117.086c2.568,0,4.648-2.08,4.648-4.64V56.263
+		C411.646,53.695,409.566,51.615,406.997,51.615z"
+												/>
+												<rect
+													x="225.28"
+													class="st0"
+													width="61.439"
+													height="40.144"
+												/>
+												<rect
+													x="100.354"
+													class="st0"
+													width="107.718"
+													height="40.144"
+												/>
+												<rect
+													x="302.287"
+													class="st0"
+													width="109.358"
+													height="40.144"
+												/>
+											</g>
+										</svg>
+									</div>
+
+									<span class="w-12 text-xs text-center text-wrap">
+										Celana Panjang
+									</span>
+								</a>
+							</swiper-slide>
+							<swiper-slide class="w-max">
+								<a href="#" class="flex flex-col items-center justify-center">
+									<div class="p-2 border rounded-full border-primary">
+										<svg
+											fill="#000000"
+											height="24"
+											width="24"
+											version="1.2"
+											baseProfile="tiny"
+											id="Layer_1"
+											xmlns="http://www.w3.org/2000/svg"
+											xmlns:xlink="http://www.w3.org/1999/xlink"
+											viewBox="-228.8 13.5 256 256"
+											xml:space="preserve"
+										>
+											<path
+												id="XMLID_189_"
+												d="M-0.8,60.9V26.3h-99.9h-99.9v34.6l-24.8,201.8l103.4,1l20.4-126.8h1h1l20.4,126.8l103.4-1L-0.8,60.9z
+	 M-117.1,50.3h-74V36.9h74V50.3z M-100.8,104.1c-2.9,0-5.8-2.9-5.8-5.8c0-3.8,2.9-5.8,5.8-5.8s5.8,1.9,5.8,5.8
+	C-95,101.2-97.9,104.1-100.8,104.1z M-100.8,79.1c-2.9,0-5.8-2.9-5.8-5.8c0-3.8,2.9-5.8,5.8-5.8s5.8,1.9,5.8,5.8
+	C-95,76.3-97.9,79.1-100.8,79.1z M-10.4,50.3h-74V36.9h74V50.3z"
+											/>
+										</svg>
+									</div>
+
+									<span class="w-12 text-xs text-center text-wrap">
+										Celana Pendek
+									</span>
+								</a>
+							</swiper-slide>
+							<swiper-slide class="w-max">
+								<a href="#" class="flex flex-col items-center justify-center">
+									<div class="p-2 border rounded-full border-primary">
+										<svg
+											height="24"
+											width="24"
+											version="1.1"
+											id="_x32_"
+											xmlns="http://www.w3.org/2000/svg"
+											xmlns:xlink="http://www.w3.org/1999/xlink"
+											viewBox="0 0 512 512"
+											xml:space="preserve"
+										>
+											<style type="text/css">
+												.st0 {
+													fill: #000000;
+												}
+											</style>
+											<g>
+												<path
+													class="st0"
+													d="M329.31,195.497c0-37.245,44.218-67.499,44.218-96.59c0-18.02-13.153-33.706-32.578-41.814V0h-16.289v52.39
+		c-4.505-0.775-9.172-1.189-13.965-1.189c-23.461,0-43.894,9.766-54.687,24.218c-10.794-14.451-31.246-24.218-54.706-24.218
+		c-4.794,0-9.46,0.414-13.965,1.189V0H171.05v57.092c-19.406,8.108-32.579,23.794-32.579,41.814
+		c0,29.091,44.219,59.345,44.219,96.59c0,116.358-88.437,104.727-88.437,265.302c0,0,16.289,18.623,74.472,18.623
+		c37.317,0,47.714,32.578,87.284,32.578c39.552,0,49.948-32.578,87.265-32.578c58.184,0,74.473-18.623,74.473-18.623
+		C417.747,300.224,329.31,311.854,329.31,195.497z"
+												/>
+											</g>
+										</svg>
+									</div>
+
+									<span class="text-xs">Gaun</span>
+								</a>
+							</swiper-slide>
+						</swiper-container>
+
+						<!-- <ul class="flex items-start gap-4 overflow-x-auto">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul> -->
+					</div>
+				</section>
+
+				<section id="featured">
+					<div class="mt-6 section-wrapper">
+						<h2 class="pb-4 text-2xl font-bold">Unggulan</h2>
+						<!-- You have reached the end of the list. -->
+
+						<ul>
+							<li>
+								<div></div>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</main>
+		</div>
+
+		<!-- An empty div with the height same as mobile bottom navbar -->
+		<div class="h-6 2xs:h-10 xs:h-12"></div>
+
+		<!-- Mobile bottom navbar -->
+		<nav
+			class="fixed bottom-0 w-full border-t sm:hidden border-zinc-300 bg-zinc-50"
+		>
+			<div class="section-wrapper">
+				<ul class="flex items-center justify-between w-full">
+					<li>
+						<a href="#" class="mobile-nav-icon">
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="currentColor"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M2.5192 7.82274C2 8.77128 2 9.91549 2 12.2039V13.725C2 17.6258 2 19.5763 3.17157 20.7881C4.34315 22 6.22876 22 10 22H14C17.7712 22 19.6569 22 20.8284 20.7881C22 19.5763 22 17.6258 22 13.725V12.2039C22 9.91549 22 8.77128 21.4808 7.82274C20.9616 6.87421 20.0131 6.28551 18.116 5.10812L16.116 3.86687C14.1106 2.62229 13.1079 2 12 2C10.8921 2 9.88939 2.62229 7.88403 3.86687L5.88403 5.10813C3.98695 6.28551 3.0384 6.87421 2.5192 7.82274ZM9 17.25C8.58579 17.25 8.25 17.5858 8.25 18C8.25 18.4142 8.58579 18.75 9 18.75H15C15.4142 18.75 15.75 18.4142 15.75 18C15.75 17.5858 15.4142 17.25 15 17.25H9Z"
+								/>
+							</svg>
+
+							<span class="text-xs">Home</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="mobile-nav-icon">
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="currentColor"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M5.62436 4.4241C3.96537 5.18243 2.75 6.98614 2.75 9.13701C2.75 11.3344 3.64922 13.0281 4.93829 14.4797C6.00072 15.676 7.28684 16.6675 8.54113 17.6345C8.83904 17.8642 9.13515 18.0925 9.42605 18.3218C9.95208 18.7365 10.4213 19.1004 10.8736 19.3647C11.3261 19.6292 11.6904 19.7499 12 19.7499C12.3096 19.7499 12.6739 19.6292 13.1264 19.3647C13.5787 19.1004 14.0479 18.7365 14.574 18.3218C14.8649 18.0925 15.161 17.8642 15.4589 17.6345C16.7132 16.6675 17.9993 15.676 19.0617 14.4797C20.3508 13.0281 21.25 11.3344 21.25 9.13701C21.25 6.98614 20.0346 5.18243 18.3756 4.4241C16.7639 3.68739 14.5983 3.88249 12.5404 6.02065C12.399 6.16754 12.2039 6.25054 12 6.25054C11.7961 6.25054 11.601 6.16754 11.4596 6.02065C9.40166 3.88249 7.23607 3.68739 5.62436 4.4241ZM12 4.45873C9.68795 2.39015 7.09896 2.10078 5.00076 3.05987C2.78471 4.07283 1.25 6.42494 1.25 9.13701C1.25 11.8025 2.3605 13.836 3.81672 15.4757C4.98287 16.7888 6.41022 17.8879 7.67083 18.8585C7.95659 19.0785 8.23378 19.292 8.49742 19.4998C9.00965 19.9036 9.55954 20.3342 10.1168 20.6598C10.6739 20.9853 11.3096 21.2499 12 21.2499C12.6904 21.2499 13.3261 20.9853 13.8832 20.6598C14.4405 20.3342 14.9903 19.9036 15.5026 19.4998C15.7662 19.292 16.0434 19.0785 16.3292 18.8585C17.5898 17.8879 19.0171 16.7888 20.1833 15.4757C21.6395 13.836 22.75 11.8025 22.75 9.13701C22.75 6.42494 21.2153 4.07283 18.9992 3.05987C16.901 2.10078 14.3121 2.39015 12 4.45873Z"
+								/>
+							</svg>
+
+							<span>Liked</span>
+						</a>
+					</li>
+					<!-- <li>
+						<a href="#" class="mobile-nav-icon">
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="currentColor"
+								xmlns="http://www.w3.org/2000/svg"
+								class="text-transparent"
+							>
+								<path
+									d="M20 20L15.8033 15.8033M18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18C14.6421 18 18 14.6421 18 10.5Z"
+									stroke="#000000"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+
+							<span>Search</span>
+						</a>
+					</li> -->
+					<li>
+						<a href="#" class="mobile-nav-icon">
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="currentColor"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									opacity="0.5"
+									d="M7.5 18C8.32843 18 9 18.6716 9 19.5C9 20.3284 8.32843 21 7.5 21C6.67157 21 6 20.3284 6 19.5C6 18.6716 6.67157 18 7.5 18Z"
+									stroke="#000000"
+									stroke-width="1.5"
+								/>
+								<path
+									opacity="0.5"
+									d="M16.5 18.0001C17.3284 18.0001 18 18.6716 18 19.5001C18 20.3285 17.3284 21.0001 16.5 21.0001C15.6716 21.0001 15 20.3285 15 19.5001C15 18.6716 15.6716 18.0001 16.5 18.0001Z"
+									stroke="#000000"
+									stroke-width="1.5"
+								/>
+								<path
+									d="M2.26121 3.09184L2.50997 2.38429H2.50997L2.26121 3.09184ZM2.24876 2.29246C1.85799 2.15507 1.42984 2.36048 1.29246 2.75124C1.15507 3.14201 1.36048 3.57016 1.75124 3.70754L2.24876 2.29246ZM4.58584 4.32298L5.20507 3.89983V3.89983L4.58584 4.32298ZM5.88772 14.5862L5.34345 15.1022H5.34345L5.88772 14.5862ZM20.6578 9.88275L21.3923 10.0342L21.3933 10.0296L20.6578 9.88275ZM20.158 12.3075L20.8926 12.4589L20.158 12.3075ZM20.7345 6.69708L20.1401 7.15439L20.7345 6.69708ZM19.1336 15.0504L18.6598 14.469L19.1336 15.0504ZM5.70808 9.76V7.03836H4.20808V9.76H5.70808ZM2.50997 2.38429L2.24876 2.29246L1.75124 3.70754L2.01245 3.79938L2.50997 2.38429ZM10.9375 16.25H16.2404V14.75H10.9375V16.25ZM5.70808 7.03836C5.70808 6.3312 5.7091 5.7411 5.65719 5.26157C5.60346 4.76519 5.48705 4.31247 5.20507 3.89983L3.96661 4.74613C4.05687 4.87822 4.12657 5.05964 4.1659 5.42299C4.20706 5.8032 4.20808 6.29841 4.20808 7.03836H5.70808ZM2.01245 3.79938C2.68006 4.0341 3.11881 4.18965 3.44166 4.34806C3.74488 4.49684 3.87855 4.61727 3.96661 4.74613L5.20507 3.89983C4.92089 3.48397 4.54304 3.21763 4.10241 3.00143C3.68139 2.79485 3.14395 2.60719 2.50997 2.38429L2.01245 3.79938ZM4.20808 9.76C4.20808 11.2125 4.22171 12.2599 4.35876 13.0601C4.50508 13.9144 4.79722 14.5261 5.34345 15.1022L6.43198 14.0702C6.11182 13.7325 5.93913 13.4018 5.83723 12.8069C5.72607 12.1578 5.70808 11.249 5.70808 9.76H4.20808ZM10.9375 14.75C9.52069 14.75 8.53763 14.7482 7.79696 14.6432C7.08215 14.5418 6.70452 14.3576 6.43198 14.0702L5.34345 15.1022C5.93731 15.7286 6.69012 16.0013 7.58636 16.1283C8.45674 16.2518 9.56535 16.25 10.9375 16.25V14.75ZM4.95808 6.87H17.0888V5.37H4.95808V6.87ZM19.9232 9.73135L19.4235 12.1561L20.8926 12.4589L21.3923 10.0342L19.9232 9.73135ZM17.0888 6.87C17.9452 6.87 18.6989 6.871 19.2937 6.93749C19.5893 6.97053 19.8105 7.01643 19.9659 7.07105C20.1273 7.12776 20.153 7.17127 20.1401 7.15439L21.329 6.23978C21.094 5.93436 20.7636 5.76145 20.4632 5.65587C20.1567 5.54818 19.8101 5.48587 19.4604 5.44678C18.7646 5.369 17.9174 5.37 17.0888 5.37V6.87ZM21.3933 10.0296C21.5625 9.18167 21.7062 8.47024 21.7414 7.90038C21.7775 7.31418 21.7108 6.73617 21.329 6.23978L20.1401 7.15439C20.2021 7.23508 20.2706 7.38037 20.2442 7.80797C20.2168 8.25191 20.1002 8.84478 19.9223 9.73595L21.3933 10.0296ZM16.2404 16.25C17.0021 16.25 17.6413 16.2513 18.1566 16.1882C18.6923 16.1227 19.1809 15.9794 19.6074 15.6318L18.6598 14.469C18.5346 14.571 18.3571 14.6525 17.9744 14.6994C17.5712 14.7487 17.0397 14.75 16.2404 14.75V16.25ZM19.4235 12.1561C19.2621 12.9389 19.1535 13.4593 19.0238 13.8442C18.9007 14.2095 18.785 14.367 18.6598 14.469L19.6074 15.6318C20.0339 15.2842 20.2729 14.8346 20.4453 14.3232C20.6111 13.8312 20.7388 13.2049 20.8926 12.4589L19.4235 12.1561Z"
+								/>
+							</svg>
+
+							<span>Cart</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="mobile-nav-icon">
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="currentColor"
+								xmlns="http://www.w3.org/2000/svg"
+								class="text-transparent"
+							>
+								<circle
+									cx="12"
+									cy="6"
+									r="4"
+									stroke="#000000"
+									stroke-width="1.5"
+								/>
+								<path
+									d="M20 17.5C20 19.9853 20 22 12 22C4 22 4 19.9853 4 17.5C4 15.0147 7.58172 13 12 13C16.4183 13 20 15.0147 20 17.5Z"
+									stroke="#000000"
+									stroke-width="1.5"
+								/>
+							</svg>
+
+							<span>Account</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="w-1 h-1"></div>
+
+		<!-- Swiper -->
+		<!-- <script src="./lib/swiper/swiper-element-bundle.min.js"></script> -->
+		<script src="./lib/swiper/swiper-bundle.min.js"></script>
+		<script>
+			const swiperHero = new Swiper("#swiper-hero", {
+				// autoplay: {
+				// 	delay: 500,
+				// },
+				speed: 1500,
+				spaceBetween: 24,
+				pagination: {
+					enabled: true,
+					el: "#swiper-hero-pagination",
+					bulletClass: "!inline-block bg-white !w-1 !h-1 mx-[2px] rounded-full",
+					bulletActiveClass: "inline-block w-1 h-1 !bg-primary",
+					renderBullet: function (index, className) {
+						return `<span class="${className}"></span>`;
+					},
+				},
+				loop: true,
+			});
+		</script>
+	</body>
+</html>

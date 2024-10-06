@@ -3,7 +3,7 @@
 /* -------------------------------------------------------------------------- */
 
 .btn {
-	@apply text-sm font-medium rounded-md;
+	@apply text-sm font-medium transition-colors rounded-md;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -30,6 +30,10 @@
 	@apply text-white bg-primary hover:bg-primary-hover;
 }
 
+.btn.btn-danger {
+	@apply text-white bg-red-500 hover:bg-red-600;
+}
+
 /* .btn.btn-secondary {
 	@apply text-black border border-primary hover:bg-primary-hover;
 } */
@@ -37,6 +41,14 @@
 /* -------------------------------------------------------------------------- */
 /* Looks Variants                                                             */
 /* -------------------------------------------------------------------------- */
+
+.btn.btn-icon {
+	@apply grid w-10 h-10 p-1 text-center border border-zinc-300 hover:bg-zinc-200 active:bg-zinc-200 place-items-center;
+}
+
+.btn.btn-ghost {
+	@apply bg-transparent hover:bg-zinc-200;
+}
 
 /* .btn.btn-outline {
 	@apply text-black bg-transparent border border-current rounded-md;

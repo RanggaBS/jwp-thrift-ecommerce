@@ -1,0 +1,3 @@
+.category-circle svg {
+	@apply p-2 rounded-full;
+}
